@@ -5,28 +5,33 @@ body {
 }
 
 .card {
-  vertical-align: middle;
   background-color: rgb(237, 241, 245);
-  padding-top: 40%;
-  margin-top: 10%;
-  height: 400px;
-  width: 250px;
+  padding: 5px;
+  margin: 5px;
+  height: 350px;
+  width: 200px;
   border-radius: 4%;
-  font-size: 650%;
   border: 5px black;
 }
 .suit {
+  height: 200px;
+  text-align: center;
   position: relative;
-  top: 1px;
-  left: 2px;
-  font-size: 10px;
-  margin: 1%;
+  font-size: 150px;
+  margin: 10px;
+  padding-top: 40px;
 }
 
 .numbers {
-  display: flex;
+  font-size: 30px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 18px;
+  left: 20px;
+}
+.numbers_2 {
+  transform: translate(-80%, -80%);
+  font-size: 30px;
+  position: absolute;
+  bottom: -20px;
+  right: 10px;
 }

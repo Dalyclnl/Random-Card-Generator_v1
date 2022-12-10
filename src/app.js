@@ -38,7 +38,6 @@ let generateRandomSuit = () => {
       element.style.color = "red";
       return element;
     });
-    console.log(color);
   }
   return suit[indexSuit];
 };
