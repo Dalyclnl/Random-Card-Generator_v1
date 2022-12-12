@@ -5,33 +5,33 @@ body {
 }
 
 .card {
+  padding: top 100px;
   background-color: rgb(237, 241, 245);
-  padding: 5px;
-  margin: 5px;
-  height: 350px;
-  width: 200px;
+  width: 230px;
+  height: 340px;
   border-radius: 4%;
-  border: 5px black;
+  border-color: 1px red;
 }
 .suit {
-  height: 200px;
-  text-align: center;
   position: relative;
-  font-size: 150px;
-  margin: 10px;
-  padding-top: 40px;
+  font-size: 120px;
+  text-align: center;
+  margin: 2px;
+  padding: 5px;
 }
 
-.numbers {
+#top {
   font-size: 30px;
+  top: 5px;
+  left: 15px;
+  float: left;
   position: absolute;
-  top: 18px;
-  left: 20px;
 }
-.numbers_2 {
-  transform: translate(-80%, -80%);
+
+#down {
   font-size: 30px;
+  bottom: 5px;
+  right: 15px;
+  float: right;
   position: absolute;
-  bottom: -20px;
-  right: 10px;
 }

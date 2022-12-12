@@ -4,7 +4,8 @@ import "./style.css";
 
 window.onload = () => {
   document.querySelector(".suit").innerHTML = generateRandomSuit();
-  document.querySelector(".numbers").innerHTML = generateRandomNumber();
+  let numbervalue = generateRandomNumber();
+  document.querySelector(".numbers").innerHTML = numbervalue;
 };
 
 let generateRandomNumber = () => {
