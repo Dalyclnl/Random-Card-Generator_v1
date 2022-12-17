@@ -4,9 +4,7 @@ import "./style.css";
 
 window.onload = () => {
   document.querySelector(".suit").innerHTML = generateRandomSuit();
-  let numbCard = generateRandomNumber();
-  //document.querySelectorAll(".numbers").innerHTML = numbCard;
-  document.getElementById("#down", "#top").innerHTML = numbCard;
+  document.querySelector(".number").classList.add(generateRandomNumber());
 };
 
 let generateRandomNumber = () => {
@@ -49,3 +47,7 @@ let generateRandomSuit = () => {
 // "&diams""\2666";&#9830;
 // "&spades;"\2660";&#9824;
 // "&clubs;"\2663";&#9827;
+
+//let numbCard = generateRandomNumber();
+//document.querySelectorAll(".numbers").innerHTML = numbCard;
+// document.getElementById("#down", "#top").innerHTML = numbCard;
