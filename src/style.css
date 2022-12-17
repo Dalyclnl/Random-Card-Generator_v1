@@ -3,21 +3,34 @@
 body {
   background-color: rgb(12, 187, 12);
 }
-
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 25px;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  background-color: blue;
+}
 .card {
-  padding: top 100px;
-  background-color: rgb(237, 241, 245);
-  width: 230px;
-  height: 340px;
+  font-family: 'Lucida Sans';
+  text-align: center;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  background: rgb(237, 241, 245);
+  width: 240px;
+  height: 370px;
   border-radius: 4%;
   border-color: 1px red;
 }
 .suit {
-  position: relative;
-  font-size: 120px;
-  text-align: center;
-  margin: 2px;
-  padding: 5px;
+  font-size: 150px;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  margin: 20px;
+  position: fixed;
 }
 
 #top {
@@ -25,13 +38,12 @@ body {
   top: 5px;
   left: 15px;
   float: left;
-  position: absolute;
 }
 
 #down {
   font-size: 30px;
   bottom: 5px;
-  right: 15px;
+  right: -200px;
   float: right;
-  position: absolute;
+  position: relative;
 }

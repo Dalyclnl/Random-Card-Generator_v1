@@ -1,0 +1,74 @@
+const card = document.createElement("div");
+    card.classList.add("card", cardSuit.toLowerCase());
+    card.classList.add("mx-auto");
+    card.classList.add("align-middle");
+    card.innerHTML =
+      '<span class="card-value-suit top">' +
+      entity +
+      "</span>" +
+      '<span class="card-suit">' +
+      cardValue +
+      "</span>" +
+      '<span class="card-value-suit bot">' +
+      entity +
+      "</span>";
+    document.querySelector("#container").appendChild(card);
+  }
+  const cards = deckBuilder();
+  randomCard(cards);
+  const boton = document.querySelector("#boton");
+  boton.addEventListener("click", function() {
+    randomCard(cards);
+  });
+};
+
+
+
+.card {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.3);
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .top-suit {
+    align-self: flex-start;
+    font-size: 80px;
+    line-height: 0;
+    padding-top: 40px;
+    padding-left: 15px;
+  }
+  
+  .bottom-suit {
+    position: absolute;
+    top: 90%;
+    align-self: flex-end;
+    font-size: 80px;
+    line-height: 0;
+    padding-right: 15px;
+    transform: scaleY(-1);
+  }
+  
+  .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+  }
+  
+
+  document.querySelector(".number").innerHTML = generateRandomNumber();
+  let suitvalue = generateRandomSuit();
+  document.querySelector(".suit").innerHTML = suitvalue;
+  document.getElementById("bottom").innerHTML = suitvalue;
+};
