@@ -8,6 +8,4 @@ ports:
     onOpen: open-preview
     visibility: public
 
-vscode:
-  extensions:
-    - esbenp.prettier-vscode
+

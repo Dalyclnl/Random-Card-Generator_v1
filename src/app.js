@@ -4,9 +4,13 @@ import "./style.css";
 
 window.onload = () => {
   document.querySelector(".suit").innerHTML = generateRandomSuit();
-  document.querySelector(".number").classList.add(generateRandomNumber());
-};
+  // const numeros = document.querySelectorAll(".number");
+  //console.log(numeros);
 
+  const numeroaletorio = generateRandomNumber();
+  document.querySelector("#top").innerHTML = numeroaletorio;
+  document.querySelector("#down").innerHTML = numeroaletorio;
+};
 let generateRandomNumber = () => {
   let numbers = [
     "A",
