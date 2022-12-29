@@ -15,24 +15,35 @@ body {
   border-color: 1px red;
 }
 .suit {
+  text-align: center;
   font-size: 150px;
-  justify-content: center;
-  align-items: center;
+  position: center;
   height: fit-content;
   width: fit-content;
-  margin: 10px;
+  margin: 55px;
 }
 
 #top {
-  font-size: 30px;
-  top: 0px;
-  left: 2px;
+  font-size: 35px;
+  top: 4px;
+  left: 4px;
   position: absolute;
 }
 
 #down {
-  font-size: 30px;
-  bottom: 0px;
-  right: 2px;
+  font-size: 35px;
+  bottom: 4px;
+  right: 4px;
   position: absolute;
+}
+button {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gainsboro;
+  border: 1px solid #555;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
 }

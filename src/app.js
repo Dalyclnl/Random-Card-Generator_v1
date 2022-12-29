@@ -3,6 +3,10 @@
 import "./style.css";
 
 window.onload = () => {
+  let refresh = document.getElementById("refresh");
+  refresh.addEventListener("click", _ => {
+    location.reload();
+  });
   document.querySelector(".suit").innerHTML = generateRandomSuit();
   // const numeros = document.querySelectorAll(".number");
   //console.log(numeros);
